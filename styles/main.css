@@ -1,0 +1,373 @@
+html {
+	box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+*, 
+*:before,
+*:after{
+	box-sizing: inherit;
+    
+}
+@font-face {
+    font-family: "ComicSans";
+    src: url("../fonts/ComicSans.ttf");
+    }
+body {
+    background-color: rgb(180, 180, 180);
+    padding-bottom: 30px;
+    font-family: 'ComicSans', Arial, sans-serif;
+    margin: 0;
+    
+}
+.header {
+    background-color: aquamarine;
+    padding: 0px 0px 17px 0px;
+    display: flex;
+    justify-content: center;
+}
+.travelDistanceLabel {
+    background-color: rgb(67, 148, 121);
+    display: flex;
+    justify-content: center;
+}
+.speedLabel {
+    background-color: rgb(67, 148, 121);
+    display: flex;
+    justify-content: center;
+    
+}
+.shipStatusLabel {
+    background-color: rgb(67, 148, 121);
+    display: flex;
+    justify-content: center;
+}
+.gassesStatusLabel {
+    background-color: rgb(67, 148, 121);
+    display: flex;
+    justify-content: center;
+}
+.tankStatusLabel {
+    background-color: rgb(67, 148, 121);
+    display: flex;
+    justify-content: center;
+    
+}
+.waterAndFoodLabel {
+    background-color: rgb(67, 148, 121);
+    display: flex;
+    justify-content: center;
+}
+.travelDistanceSection {
+    background-color: rgb(30, 66, 54);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+.speedSection {
+    background-color: rgb(30, 66, 54);
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+.shipStatusSection {
+    background-color: rgb(30, 66, 54);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.gassesStatusSection {
+    background-color: rgb(30, 66, 54);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+.tankStatusSection {
+    background-color: rgb(30, 66, 54);
+    
+}
+.waterAndFoodSection {
+    background-color: rgb(30, 66, 54);
+    padding: 25px;
+    
+}
+#spacexLogo {
+    height:50px;
+    
+}
+.Labels {
+    font-size: 20pt;
+    color: white;
+}
+.speedBarZero {
+    margin: 5px 0px 0px 0px;
+    height: 20px;
+    background-color: green;
+    width: 3%;
+    margin-right: auto;
+    transition-duration: 1s;
+    
+}
+.speedBarGreen {
+    margin: 5px 0px 0px 0px;
+    height: 20px;
+    background-color: green;
+    width: 30%;
+    margin-right: auto;
+    transition-duration: 1s;
+    
+}
+.speedBarYellow {
+    margin: 5px 0px 0px 0px;
+    height: 20px;
+    background-color: rgb(179, 190, 23);
+    width: 50%;
+    margin-right: auto;
+    transition-duration: 1s;
+    
+}
+.speedBarOrange {
+    margin: 5px 0px 0px 0px;
+    height: 20px;
+    background-color: #ffa500;
+    width: 75%;
+    margin-right: auto;
+    transition-duration: 1s;
+    
+}
+.speedBarRed {
+    margin: 5px 0px 0px 0px;
+    height: 20px;
+    background-color: red;
+    width: 100%;
+    margin-right: auto;
+    transition-duration: 1s;
+    
+
+}
+#speedUp {
+    width:50px;
+    height: 30px;
+    background-color: rgba(255, 255, 0, 0.555);
+    font-size: 16pt;
+    transition-duration: 0.6s;
+    
+}
+#speedUp:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.281) ;
+}
+#slowDown {
+    width:50px;
+    height: 30px;
+    background-color: rgba(255, 255, 0, 0.555);
+    font-size: 16pt;
+    transition-duration: 0.6s;
+}
+#slowDown:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.281) ;
+}
+#speedDOM {
+    font-size: 25pt;
+    color: white;
+    
+}
+#overDistanceToMarsDOM {
+    font-size: 23pt;
+    color: white;
+}
+.shipPrint {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    color: black;
+    font-size: 18pt;
+
+}
+th, td {
+    padding: 10px; 
+}
+#engine {
+    background-color: white;
+    transition-duration: 1s;
+}
+#sleepingRoom {
+    background-color: white;
+    transition-duration: 1s;
+}
+#cockpit {
+    background-color: white;
+    transition-duration: 1s;
+}
+.gasses {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+    color: black;
+    font-size: 10pt;
+    
+
+}
+th, td {
+    padding: 10px; 
+}
+.percentage, th, td {
+    border: 1px solid white;
+    color: white;
+}
+
+#co2 {
+    height: 30%;
+    width: 50px;
+    background-color: violet;
+    border-radius: 2%;
+    margin: 0px 15px 0px 75px;
+    transition-duration: 0.8s;
+}
+#cl2 {
+    height: 21%;
+    width: 50px;
+    background-color: rgb(101, 89, 155);
+    border-radius: 2%;
+    margin: 0px 15px 0px 15px;
+    transition-duration: 1.9s;
+}
+#hn3 {
+    height: 15%;
+    width: 50px;
+    background-color: rgb(158, 108, 50);
+    border-radius: 2%;
+    margin: 0px 15px 0px 15px;
+    transition-duration: 1.4s;
+}
+#o2 {
+    margin-bottom: 160px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 0, 0.555);
+    font-size: 14px;
+    transition-duration: 0.6s;
+}
+
+#o2:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.281) ;
+}
+
+.progress {
+    width: 100%;
+    max-width: 250px;
+    font-family: 'ComicSans', Arial, sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+.progressBar {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+}
+
+.fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background-color: #009578;
+    transform-origin: center top;
+    transform: rotate(0.4turn);
+    transition: transform 0.2s ease-out;
+}
+
+.textFill {
+    width: 75%;
+    height: 150%;
+    background-color: rgb(30, 66, 54);;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Deze bron heeft mij hier gehlopen */
+    /* rotate() - CSS: Cascading Style Sheets | MDN. (2021, 19 februari). 
+    MDN. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate() */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+}
+
+.progressSection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#overDistanceToMarsDOM {
+    display: flex;
+    justify-content: center;
+}
+
+.arcContainer {
+    width: 100%;
+}
+
+#arcUsed {
+    /*border:1px solid #d3d3d3;*/
+    width: 100%;
+}
+
+.waterAndFoodSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.waterAndFoodTable {
+    margin-left: 20px;
+}
+
+
+.tankStatusSection{
+    background-color: rgb(30, 66, 54);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; 
+}
+
+.fuelTable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    font-size: 10pt;
+}
+
+.weekDays {
+    width: 20px;
+    background-color: rgb(168, 90, 168);
+    border-radius: 2%;
+    margin: 0px 15px 0px 5px;
+    transition-duration: 0.8s;
+}
+
+#Monday {
+    margin-left: 50px; 
+}
+
+.shipStatusSection {
+    padding: 30px;
+}

@@ -1,0 +1,122 @@
+/* Ik ben begonnen met mobile first desgin, alle delen van de pagina nemen hier dus de hele breedte*/
+body { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+    "header"
+    "travelDistanceLabel"
+    "travelDistanceSection"
+    "speedLabel"
+    "speedSection"
+    "shipStatusLabel"
+    "shipStatusSection"
+    "gassesStatusLabel"
+    "gassesStatusSection"
+    "waterAndFoodLabel"
+    "waterAndFoodSection"
+    "tankStatusLabel"
+    "tankStatusSection";
+}
+
+.header {
+    grid-area: header;
+}
+
+.travelDistanceLabel {
+    grid-area: travelDistanceLabel;
+}
+
+.speedLabel {
+    grid-area: speedLabel;
+}
+
+.shipStatusLabel {
+    grid-area: shipStatusLabel;
+}
+
+.travelDistanceSection {
+    grid-area: travelDistanceSection;
+}
+
+.speedSection {
+    grid-area: speedSection;
+}
+
+.shipStatusSection {
+    grid-area: shipStatusSection;
+}
+
+.gassesStatusLabel {
+    grid-area: gassesStatusLabel;
+}
+
+.tankStatusLabel {
+    grid-area: tankStatusLabel;
+}
+
+.waterAndFoodLabel {
+    grid-area: waterAndFoodLabel;
+}
+
+.gassesStatusSection {
+    grid-area: gassesStatusSection;
+}
+
+.tankStatusSection {
+    grid-area: tankStatusSection;
+}
+
+.waterAndFoodSection {
+    grid-area: waterAndFoodSection;
+}
+
+/* media query voor tablets*/
+@media only screen and (min-width: 601px){
+    body { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas:
+        "header header"
+        "travelDistanceLabel speedLabel"
+        "travelDistanceSection speedSection"
+        "shipStatusLabel gassesStatusLabel"
+        "shipStatusSection gassesStatusSection"
+        "waterAndFoodLabel tankStatusLabel"
+        "waterAndFoodSection tankStatusSection";
+    }
+}
+/* media query voor laptops*/
+@media only screen and (min-width: 901px){
+    body { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas:
+        "header header header"
+        "travelDistanceLabel speedLabel shipStatusLabel"
+        "travelDistanceSection speedSection shipStatusSection"
+        "gassesStatusLabel waterAndFoodLabel tankStatusLabel"
+        "gassesStatusSection waterAndFoodSection tankStatusSection";
+    }
+}
+/* media query voor grotere schermen, en dit zorgt dat de pagina niet tot het oneindige vergroot */
+@media only screen and (min-width: 1200px){
+
+    body { max-width: 1400px;
+        margin: auto;
+    
+      }
+      body { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas:
+        "header header header"
+        "travelDistanceLabel speedLabel shipStatusLabel"
+        "travelDistanceSection speedSection shipStatusSection"
+        "gassesStatusLabel waterAndFoodLabel tankStatusLabel"
+        "gassesStatusSection waterAndFoodSection tankStatusSection";
+    }
+}

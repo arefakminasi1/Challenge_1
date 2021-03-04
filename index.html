@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ITS Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="styles/grid-layout.css" rel="stylesheet"/>	
+        <link type="text/css" href="styles/main.css" rel="stylesheet"/>
+        <script type="text/javascript" src="JavaScript/js.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img src="Images/spacexLogo.png" alt="spacex logo" id="spacexLogo">
+             <!-- 
+                 Wikipedia-bijdragers. (z.d.). SpaceX. Wikipedia. Geraadpleegd op 3 maart 2021,
+                  van https://nl.wikipedia.org/wiki/SpaceX#/media/Bestand:SpaceX-Logo.svg
+              --> 
+        </header>
+        <!-- Deze deel bevat de bovenste drie label namen van de dashboard.
+        Ik heb de label namen apart gezet van de content, om overzichtelijker te gaan werken
+        -->
+        <div class="travelDistanceLabel">
+            <p class="Labels">Travel Distance</p>
+        </div>
+        <div class="speedLabel">
+            <p class="Labels">Speed</p>
+        </div>
+        <div class="shipStatusLabel">
+            <p class="Labels">Ship status</p>
+        </div>
+        <!-- Deze deel bevat de bovenste drie datavisualisaties-->
+        <div class="travelDistanceSection">
+            <div class="progressSection">
+                <div class="progress" id="progress">
+                    <div class="progressBar">
+                        <div class="fill" id="fill"> 
+                 
+                        </div>
+                        <div class="textFill" id="textFill">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="overDistanceToMarsDOM"></p>
+        </div>
+        <div class="speedSection">
+            <div id="speedBar" class="speedBarGreen">
+            </div>
+            <p id="speedDOM"></p> 
+            <div>
+                <button type="button" id="speedUp">+</button>
+                <button type="button" id="slowDown">-</button>
+            </div>
+        </div>
+        <div class="shipStatusSection">
+            <table class="shipPrint">
+                <tr class="shipPrint" >
+                    <td class="shipPrint" id="engine">Engine</td>
+                    <td class="shipPrint" id="sleepingRoom">Sleeping room</td>
+                    <td class="shipPrint" id="cockpit">Cockpit</td>
+                </tr>
+            </table>
+        </div>
+        <!---->
+        <!--Deze deel bevat de onderste drie label namen-->
+        <div class="gassesStatusLabel">
+            <p class="Labels">Dangerous burn gases</p>
+        </div>
+        <div class="waterAndFoodLabel">
+            <p class="Labels">Water & Food</p>
+        </div>
+        <div class="tankStatusLabel">
+            <p class="Labels">Weekly fuel usage</p>
+        </div>
+        <!---->
+        <!--Deze deel bevat de onderste drie datavisualisaties-->
+        <div class="gassesStatusSection">
+            <table class="gasses">
+                <tr>
+                    <td class ="percentage">100%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">90%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">80%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">70%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">60%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">50%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">40%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">30%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">20%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">10%</td>
+                </tr>
+            </table>
+            <div id="co2"> </div>
+            <div id="cl2"> </div>
+            <div id="hn3"> </div>
+            <button type="button" id="o2">O2 Release</button>
+        </div>
+        <div class="waterAndFoodSection">
+            <table class="waterAndFoodTable">
+                <tr>
+                    <td id="availableData"> 
+                    </td>
+                </tr>
+            </table>
+            <div class="arcContainer">
+                <canvas id="arcUsed">
+                </canvas> 
+            </div>
+        </div>
+        <div class="tankStatusSection">
+            <table class="fuelTable">
+                <tr>
+                    <td class ="percentage">100%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">90%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">80%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">70%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">60%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">50%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">40%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">30%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">20%</td>
+                </tr>
+                <tr>
+                    <td class ="percentage">10%</td>
+                </tr>
+            </table>
+             <div id="Monday" class="weekDays"> </div>
+             <div id="Tuesday" class="weekDays"> </div>
+             <div id="Wednesday" class="weekDays"> </div>
+             <div id="Thursday" class="weekDays"> </div>
+             <div id="Friday" class="weekDays"> </div>
+             <div id="Saturday" class="weekDays"> </div>
+             <div id="Sunday" class="weekDays"> </div>
+        </div>
+    </body>
+</html>
